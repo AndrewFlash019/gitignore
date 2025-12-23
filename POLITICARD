@@ -1,0 +1,51 @@
+# =========================================================================
+# GENERAL SETTINGS
+# =========================================================================
+NODE_ENV=development
+PORT=3000
+APP_NAME=PolitiCard
+APP_URL=http://localhost:3000
+
+# =========================================================================
+# DATABASE CONFIGURATION
+# =========================================================================
+# If using MongoDB:
+MONGODB_URI=mongodb://localhost:27017/politicard
+
+# If using PostgreSQL/MySQL:
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=admin
+DB_PASS=your_password
+DB_NAME=politicard_db
+
+# =========================================================================
+# AUTHENTICATION (JWT)
+# =========================================================================
+# Replace with a long, random string
+JWT_SECRET=your_super_secret_jwt_key_here
+JWT_EXPIRES_IN=7d
+
+# =========================================================================
+# POLITICAL DATA APIs (Common for this type of app)
+# =========================================================================
+# ProPublica Congress API (Popular for legislative data)
+PROPUBLICA_API_KEY=your_propublica_key_here
+
+# OpenStates API (For state-level data)
+OPENSTATES_API_KEY=your_openstates_key_here
+
+# Google Civic Information API (For representative lookups)
+GOOGLE_CIVIC_API_KEY=your_google_key_here
+
+# =========================================================================
+# THIRD-PARTY SERVICES
+# =========================================================================
+# Email service (e.g., SendGrid or Mailtrap)
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USER=your_username
+MAIL_PASS=your_password
+
+# Cloudinary (If the app has card images/avatars)
+CLOUDINARY_URL=cloudinary://api_key:api_secret@cloud_name
